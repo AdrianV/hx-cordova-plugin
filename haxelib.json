@@ -1,0 +1,13 @@
+{
+  "name": "hx-cordova-plugin",
+  "url" : "https://github.com/AdrianV/hx-cordova-plugin/",
+  "license": "MIT",
+  "tags": ["cordova", "java", "c#"],
+  "description": "write cordova plugins in Haxe.",
+  "version": "0.0.1",
+  "releasenote": "Initial release.",
+  "contributors": ["Adrian"],
+  "dependencies": {
+  },
+  "classPath": "src"
+}
