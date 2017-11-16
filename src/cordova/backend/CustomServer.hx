@@ -15,6 +15,7 @@ class CustomServer
 	
 	function set_plugin(val: cordova.backend.PluginServer): cordova.backend.PluginServer {
 		plugin = val;
+		if (val != null) ready();
 		return val;
 	}
 	
@@ -31,9 +32,18 @@ class CustomServer
 		ctx.success(s.toString());		
 	}
 	
+	function error(data: Dynamic, ctx: CallbackContext) {
+		var s = new haxe.Serializer();
+		s.serialize(data);
+		ctx.error(s.toString());		
+	}
+	
 	function popContext(): CallbackContext {
 		var ctx = _callbackContext;
 		_callbackContext = null;
 		return ctx;
 	}
+	
+	function ready() {}
+	
 }
