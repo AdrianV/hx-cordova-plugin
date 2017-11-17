@@ -1,0 +1,8 @@
+-lib hx-cordova-plugin
+-cp hx-src
+-java java-src
+-D java_ver=6
+-D analyzer-optimize
+-java-lib C:\Program Files (x86)\Android\android-sdk\platforms\android-23\android.jar
+-java-lib platforms\android\CordovaLib\build\intermediates\bundles\debug\classes.jar
+backend.Handler

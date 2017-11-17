@@ -1,10 +1,5 @@
 package cordova.backend;
 
-/**
- * ...
- * @author 
- */
-
 #if java
 
 import org.apache.cordova.CordovaPlugin;

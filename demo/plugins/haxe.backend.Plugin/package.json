@@ -1,0 +1,28 @@
+{
+    "name":"haxe.backend.Plugin",
+    "cordova": {
+        "platforms": [
+          "android"
+        ]
+      },
+      "description": "Cordova Whitelist Plugin",
+      "engines": {
+        "cordovaDependencies": {
+          "0.0.0": {
+            "cordova-android": ">=4.0.0"
+          },
+          "2.0.0": {
+            "cordova": ">100"
+          }
+        }
+      },
+      "homepage": "https://github.com/AdrianV/hx-cordova-plugin",
+      "keywords": [
+        "cordova",
+        "Haxe"
+      ],
+      "license": "MIT",
+      "version": "1.0.1"
+      
+            
+}

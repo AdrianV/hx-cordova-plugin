@@ -1,9 +1,5 @@
 package cordova.backend;
 
-/**
- * ...
- * @author 
- */
 
 #if java
 typedef CallbackContext = org.apache.cordova.CallbackContext;

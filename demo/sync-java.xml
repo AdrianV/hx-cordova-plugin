@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sync>
+	<source name="java-src\src" />
+	<dest_root name="{env:SYNC.PLATFORM}" />
+	<destination name="src" />
+	<actions>
+		<copy />
+		<delete extension="java" skip="org,com" />
+	</actions>
+</sync>

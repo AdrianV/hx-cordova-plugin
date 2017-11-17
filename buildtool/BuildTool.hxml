@@ -1,0 +1,4 @@
+-lib xmlTools
+-cp src
+-neko bin/BuildTool.n
+-main BuildTool

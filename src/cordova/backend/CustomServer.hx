@@ -1,10 +1,5 @@
 package cordova.backend;
 
-/**
- * ...
- * @author 
- */
-
 class CustomServer
 {
 

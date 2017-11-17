@@ -1,0 +1,18 @@
+{
+  "cordova-plugin-whitelist": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-whitelist@1"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "haxe.backend.Plugin": {
+    "source": {
+      "type": "local",
+      "path": "E:\\work\\libhaxe\\hx-cordova-plugin\\demo\\node_modules\\haxe.backend.Plugin"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}

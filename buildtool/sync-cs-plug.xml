@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sync>
+	<source name="..\TestHxCordova\out\cs-src\src" />
+	<dest_root name="C:\Users\adrian\Documents\Visual Studio 2015\Projects\BlankCordovaApp1\BlankCordovaApp1\plugins\haxe.backend.TestPlugin" />
+	<destination name="src\wp8" />
+	<actions>
+		<copy />
+		<delete extension="cs" />
+		<plugin name="plugin.xml" platform="wp8" />
+	</actions>
+</sync>

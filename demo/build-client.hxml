@@ -1,0 +1,5 @@
+-lib hx-cordova-plugin
+-cp hx-src
+-js www/js/index.js
+-main client.Main
+-D analyzer-optimize

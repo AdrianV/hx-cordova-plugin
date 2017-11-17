@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sync>
+	<source name="java-src\src" />
+	<dest_root name="{env:SYNC.PLUG}" />
+	<destination name="src\android" />
+	<actions>
+		<copy />
+		<delete extension="java" />
+		<plugin name="plugin.xml" platform="android" />
+	</actions>
+</sync>

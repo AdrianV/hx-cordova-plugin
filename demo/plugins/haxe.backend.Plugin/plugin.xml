@@ -1,0 +1,87 @@
+﻿
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="haxe.backend.Plugin" version="1.0.1" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:rim="http://www.blackberry.com/ns/widgets" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+	<name>HaxeBackend
+	
+	</name>
+	<description>generic Haxe Backend plugin for cordova
+	
+	</description>
+	<license>MIT
+	
+	</license>
+	<keywords>Haxe
+	
+	</keywords>
+	<engines>
+		<engine name="cordova-android" version=">=3.4.0"/>
+	</engines>
+	<!-- android -->
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="PluginServer">
+				<param name="android-package" value="backend.Handler"/>
+			</feature>
+		</config-file>
+		<source-file src="src\android\haxe\ds\IntMap.java" target-dir="src\haxe\ds"/>
+		<source-file src="src\android\haxe\lang\Function.java" target-dir="src\haxe\lang"/>
+		<source-file src="src\android\haxe\lang\IHxObject.java" target-dir="src\haxe\lang"/>
+		<source-file src="src\android\haxe\lang\Runtime.java" target-dir="src\haxe\lang"/>
+		<source-file src="src\android\backend\HaxeBackend_add_8__Fun.java" target-dir="src\backend"/>
+		<source-file src="src\android\haxe\lang\DynamicObject.java" target-dir="src\haxe\lang"/>
+		<source-file src="src\android\haxe\Unserializer.java" target-dir="src\haxe"/>
+		<source-file src="src\android\haxe\ds\_IntMap\IntMapKeyIterator.java" target-dir="src\haxe\ds\_IntMap"/>
+		<source-file src="src\android\haxe\lang\HaxeException.java" target-dir="src\haxe\lang"/>
+		<source-file src="src\android\haxe\root\Array.java" target-dir="src\haxe\root"/>
+		<source-file src="src\android\cordova\util\Runner.java" target-dir="src\cordova\util"/>
+		<source-file src="src\android\haxe\root\List.java" target-dir="src\haxe\root"/>
+		<source-file src="src\android\haxe\_Unserializer\DefaultResolver.java" target-dir="src\haxe\_Unserializer"/>
+		<source-file src="src\android\cordova\backend\CustomServer.java" target-dir="src\cordova\backend"/>
+		<source-file src="src\android\haxe\CallStack.java" target-dir="src\haxe"/>
+		<source-file src="src\android\haxe\lang\StringExt.java" target-dir="src\haxe\lang"/>
+		<source-file src="src\android\haxe\root\StringBuf.java" target-dir="src\haxe\root"/>
+		<source-file src="src\android\haxe\root\Type.java" target-dir="src\haxe\root"/>
+		<source-file src="src\android\haxe\java\Lib.java" target-dir="src\haxe\java"/>
+		<source-file src="src\android\haxe\lang\HxObject.java" target-dir="src\haxe\lang"/>
+		<source-file src="src\android\cordova\backend\PluginServer_handleRequestOnUiThread_61__Fun.java" target-dir="src\cordova\backend"/>
+		<source-file src="src\android\haxe\lang\Exceptions.java" target-dir="src\haxe\lang"/>
+		<source-file src="src\android\haxe\StackItem.java" target-dir="src\haxe"/>
+		<source-file src="src\android\haxe\ds\_StringMap\StringMapKeyIterator.java" target-dir="src\haxe\ds\_StringMap"/>
+		<source-file src="src\android\haxe\lang\StringRefl.java" target-dir="src\haxe\lang"/>
+		<source-file src="src\android\haxe\root\Date.java" target-dir="src\haxe\root"/>
+		<source-file src="src\android\haxe\root\StringTools.java" target-dir="src\haxe\root"/>
+		<source-file src="src\android\_List\ListNode.java" target-dir="src\_List"/>
+		<source-file src="src\android\haxe\lang\VarArgsBase.java" target-dir="src\haxe\lang"/>
+		<source-file src="src\android\cordova\backend\PluginServer_handleRequestThreaded_65__Fun.java" target-dir="src\cordova\backend"/>
+		<source-file src="src\android\haxe\ds\StringMap.java" target-dir="src\haxe\ds"/>
+		<source-file src="src\android\haxe\lang\EmptyObject.java" target-dir="src\haxe\lang"/>
+		<source-file src="src\android\haxe\lang\VarArgsFunction.java" target-dir="src\haxe\lang"/>
+		<source-file src="src\android\haxe\ds\_ObjectMap\ObjectMapKeyIterator.java" target-dir="src\haxe\ds\_ObjectMap"/>
+		<source-file src="src\android\haxe\lang\Closure.java" target-dir="src\haxe\lang"/>
+		<source-file src="src\android\haxe\root\ValueType.java" target-dir="src\haxe\root"/>
+		<source-file src="src\android\backend\Handler.java" target-dir="src\backend"/>
+		<source-file src="src\android\haxe\Log_Anon_25__Fun.java" target-dir="src\haxe"/>
+		<source-file src="src\android\haxe\ds\ObjectMap.java" target-dir="src\haxe\ds"/>
+		<source-file src="src\android\haxe\IMap.java" target-dir="src\haxe"/>
+		<source-file src="src\android\haxe\Serializer.java" target-dir="src\haxe"/>
+		<source-file src="src\android\haxe\lang\FieldLookup.java" target-dir="src\haxe\lang"/>
+		<source-file src="src\android\haxe\lang\Enum.java" target-dir="src\haxe\lang"/>
+		<source-file src="src\android\haxe\root\Std.java" target-dir="src\haxe\root"/>
+		<source-file src="src\android\cordova\backend\PluginServer.java" target-dir="src\cordova\backend"/>
+		<source-file src="src\android\haxe\root\Reflect.java" target-dir="src\haxe\root"/>
+		<source-file src="src\android\_Array\ArrayIterator.java" target-dir="src\_Array"/>
+		<source-file src="src\android\haxe\io\Bytes.java" target-dir="src\haxe\io"/>
+		<source-file src="src\android\haxe\lang\IEquatable.java" target-dir="src\haxe\lang"/>
+		<source-file src="src\android\backend\HaxeBackend.java" target-dir="src\backend"/>
+		<source-file src="src\android\haxe\Log.java" target-dir="src\haxe"/>
+		<source-file src="src\android\haxe\lang\ParamEnum.java" target-dir="src\haxe\lang"/>
+	</platform>
+	<!-- wp8 -->
+	<platform name="wp8">
+		<config-file parent="/*" target="config.xml">
+			<feature name="PluginServer">
+				<param name="wp-package" value="backend.Handler"/>
+			</feature>
+		</config-file>
+	</platform>
+</plugin>

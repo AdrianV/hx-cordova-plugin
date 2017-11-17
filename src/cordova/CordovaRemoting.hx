@@ -41,7 +41,7 @@ class CordovaRemoting
 		s.serialize(_path);
 		s.serialize(params);
 		
-		phonegap.Cordova.exec(
+		cordova.Cordova.exec(
 			function( response : Dynamic ) {
 				function invalidResponse() throw "Invalid response : '" + response+"'";
 				if (!Std.is(response, String)) invalidResponse();

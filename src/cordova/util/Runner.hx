@@ -1,9 +1,5 @@
 package cordova.util;
 
-/**
- * ...
- * @author 
- */
 @:nativeGen
 class Runner implements java.lang.Runnable
 {
