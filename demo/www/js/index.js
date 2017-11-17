@@ -267,16 +267,44 @@ var client_Main = function() {
 	});
 	this.api = new client_HaxeBackendApi(this._cnx);
 	this.api.add(1,2,function(result) {
-		console.log("Main.hx:16:",result);
+		var el = window.document.getElementById("whatsup");
+		if(el != null) {
+			el.innerText = "add(1,2) return " + result;
+		}
+		console.log("Main.hx:17:",result);
 	});
 };
 $hxClasses["client.Main"] = client_Main;
 client_Main.__name__ = ["client","Main"];
+client_Main.get_whatsup = function() {
+	var el = window.document.getElementById("whatsup");
+	if(el != null) {
+		return el.innerText;
+	} else {
+		return "";
+	}
+};
+client_Main.set_whatsup = function(val) {
+	var el = window.document.getElementById("whatsup");
+	if(el != null) {
+		el.innerText = val;
+	}
+	if(el != null) {
+		return el.innerText;
+	} else {
+		return "";
+	}
+};
 client_Main.onDeviceReady = function() {
-	console.log("Main.hx:22:","I am ready now");
+	var el = window.document.getElementById("whatsup");
+	if(el != null) {
+		el.innerText = "I am ready now";
+	}
+	console.log("Main.hx:37:","I am ready now");
+	client_Main.app = new client_Main();
 };
 client_Main.main = function() {
-	window.document.addEventListener("ondeviceready",client_Main.onDeviceReady,false);
+	window.document.addEventListener("deviceready",client_Main.onDeviceReady,false);
 };
 client_Main.prototype = {
 	__class__: client_Main
