@@ -5,7 +5,7 @@
           "android"
         ]
       },
-      "description": "Cordova Whitelist Plugin",
+      "description": "Haxe Backend",
       "engines": {
         "cordovaDependencies": {
           "0.0.0": {

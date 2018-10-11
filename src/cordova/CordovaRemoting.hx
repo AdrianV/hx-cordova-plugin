@@ -7,10 +7,20 @@ package cordova;
 
 import haxe.remoting.AsyncConnection;
 import haxe.remoting.Context;
- 
+
+@:forward(setErrorHandler)
+private abstract CordovaRemotingX(CordovaRemoting) from CordovaRemoting to CordovaRemoting
+{
+	@:resolve
+	inline function resolve(name) return this.resolve(name);
+
+	public inline function new(c) this = c;
+
+}
+
 class CordovaRemoting 
 #if js
-	implements AsyncConnection implements Dynamic<AsyncConnection>
+	implements AsyncConnection //implements Dynamic<AsyncConnection>
 #end
 {
 	var _data : { plug : String, error : Dynamic -> Void };
@@ -70,7 +80,7 @@ class CordovaRemoting
 	
 	public static function connect( plugName : String, ? onError: Dynamic->Void) 
 	{
-		var cnx = new CordovaRemoting({ plug : plugName, error : onError },[plugName]);
+		var cnx = new CordovaRemotingX(new CordovaRemoting({ plug : plugName, error : onError },[plugName]));
 		return cnx;
 	}
 	
